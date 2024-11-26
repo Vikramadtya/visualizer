@@ -1,3 +1,5 @@
+import ThemeToggle from "@/components/organism/header/atom/themeToggle";
+
 const NavigationBar = () => {
   return (
     <>
@@ -91,6 +93,9 @@ const NavigationBar = () => {
                 <a href="#" className="flex items-center">
                   Docs
                 </a>
+              </li>
+              <li>
+                <ThemeToggle />
               </li>
             </ul>
           </div>

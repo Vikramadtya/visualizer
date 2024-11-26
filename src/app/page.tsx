@@ -6,9 +6,7 @@ import Footer from "@/components/organism/footer/footer";
 export default function Home() {
   return (
     <>
-      <div className="mx-auto max-w-screen-lg py-10">
-        <BlogGrid />
-      </div>
+      <BlogGrid />
     </>
   );
 }

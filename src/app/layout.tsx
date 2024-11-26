@@ -5,6 +5,8 @@ import "./globals.css";
 import NavigationBar from "@/components/organism/header/navigationBar";
 import Footer from "@/components/organism/footer/footer";
 
+import ThemeProvider from "../utils/themeProvider";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -27,14 +29,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex h-screen flex-col justify-between">
-          <NavigationBar />
-          <main className="mb-auto">{children}</main>
-          <Footer />
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <NavigationBar />
+            <main className="mb-auto">
+              <div className="mx-auto max-w-screen-lg py-10">{children}</div>
+            </main>
+            <Footer />
+          </ThemeProvider>
         </div>
       </body>
     </html>
