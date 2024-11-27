@@ -3,7 +3,7 @@ import ThemeToggle from "@/components/organism/header/atom/themeToggle";
 const NavigationBar = () => {
   return (
     <>
-      <nav className="mx-auto mt-10 block w-full max-w-screen-lg rounded-md bg-white px-4 py-2 shadow-md lg:px-8 lg:py-3">
+      <nav className="mx-auto mt-10 w-full max-w-screen-lg rounded-md bg-white px-4 py-2 shadow-md lg:px-8 lg:py-3">
         <div className="container mx-auto flex flex-wrap items-center justify-between text-slate-800">
           <a
             href="#"

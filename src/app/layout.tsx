@@ -6,6 +6,7 @@ import NavigationBar from "@/components/organism/header/navigationBar";
 import Footer from "@/components/organism/footer/footer";
 
 import ThemeProvider from "../utils/themeProvider";
+import ScrollProgressBar from "@/components/molecule/scrollPercentageBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -41,8 +42,9 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <NavigationBar />
-            <main className="mb-auto">
-              <div className="mx-auto max-w-screen-lg py-10">{children}</div>
+
+            <main className="mx-auto mb-auto max-w-screen-lg py-10">
+              {children}
             </main>
             <Footer />
           </ThemeProvider>
