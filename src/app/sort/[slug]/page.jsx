@@ -1,5 +1,8 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import rehypePrettyCode from "rehype-pretty-code";
+import remarkGfm from "remark-gfm";
+import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
 
 import { Separator } from "../../../components/molecule/separator";
 import { prettyCodeOptions } from "../../../utils/markdownConstants";
@@ -62,12 +65,14 @@ export default async function Post({ params }) {
             source={content}
             options={{
               mdxOptions: {
-                remarkPlugins: [],
-                rehypePlugins: [[rehypePrettyCode, prettyCodeOptions]],
+                remarkPlugins: [remarkGfm, remarkMath],
+                rehypePlugins: [
+                  [rehypePrettyCode, prettyCodeOptions],
+                  rehypeKatex,
+                ],
               },
             }}
             components={useMDXComponents()}
-            co
           />
         </div>
 

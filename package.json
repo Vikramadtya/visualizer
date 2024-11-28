@@ -23,8 +23,10 @@
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
     "react-share": "^5.1.1",
+    "rehype-katex": "^7.0.1",
     "rehype-pretty-code": "^0.14.0",
     "remark-gfm": "^4.0.0",
+    "remark-math": "^6.0.0",
     "shiki": "^1.23.1",
     "tailwind-merge": "^2.5.5",
     "use-sound": "^4.0.3"
