@@ -9,6 +9,7 @@ const Visualiser = ({ data, maxNumber }) => {
   const trace = JSON.parse(data);
 
   const timeout = 50;
+  const [multiplier, setMultiplier] = useState(1);
   const [currentStep, setCurrentStep] = useState(0);
   const [isPaused, pause] = useState(false);
 
@@ -22,7 +23,7 @@ const Visualiser = ({ data, maxNumber }) => {
     if (!isPaused & (currentStep !== trace.length - 1)) {
       const interval = setInterval(() => {
         setCurrentStep(currentStep + 1);
-      }, timeout);
+      }, timeout * multiplier);
       return () => clearInterval(interval);
     } else {
       pause(true);
@@ -93,8 +94,11 @@ const Visualiser = ({ data, maxNumber }) => {
               <button
                 type="button"
                 className="rounded-lg px-2 text-xs font-semibold leading-6 text-slate-500 ring-2 ring-inset ring-slate-500 transition-all transition-all transition-all duration-500 duration-500 duration-500 dark:bg-slate-500 dark:text-slate-100 dark:ring-0"
+                onClick={() =>
+                  setMultiplier(multiplier < 10 ? multiplier + 1 : 1)
+                }
               >
-                1x
+                {multiplier}x
               </button>
             </div>
           </div>

@@ -30,7 +30,7 @@ const sortBoard = ({ state, maxNumber, length }) => {
             <Box
               key={value}
               width={width}
-              height={resize * (value + 1)}
+              height={resize * (value + 3)}
               color={color}
               value={value}
             />

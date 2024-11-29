@@ -45,7 +45,7 @@ export default async function Post({ params }) {
   const blogData = await getBlogMetaDataBySlug(slug);
   const content = await getBlogContentBySlug(slug);
 
-  let maxNumber = 10;
+  let maxNumber = 25;
 
   let sorter = SortFactory(slug);
   sorter.sort(shuffle([...Array(maxNumber).keys()]));
