@@ -8,6 +8,7 @@ const BlogGrid = ({ blogs }) => {
           return (
             <div key={blog.slug}>
               <BlogCard
+                color={blog.color}
                 title={blog.title}
                 description={blog.description}
                 slug={blog.slug}
