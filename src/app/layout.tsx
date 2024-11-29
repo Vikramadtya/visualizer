@@ -20,7 +20,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: siteMetadata.title,
+  title: siteMetadata.headerTitle,
   description: siteMetadata.description,
 };
 
