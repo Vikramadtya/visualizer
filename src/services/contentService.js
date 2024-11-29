@@ -1,11 +1,18 @@
-let sorts = {
-  "bubble-sort": {
-    title: "Bubble sort",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
-    slug: "bubble-sort",
-  },
-};
+async function getSortJson() {
+  const response = await fetch(
+    `https://raw.githubusercontent.com/Vikramadtya/visualizer/refs/heads/main/markdown/sorts.json`,
+    {
+      method: "GET",
+      headers: {
+        "Content-type": "application/json",
+      },
+    },
+  );
+
+  return await response.json();
+}
+
+let sorts = await getSortJson();
 
 export function getAllBlogs() {
   return Object.values(sorts);
