@@ -6,7 +6,6 @@ import NavigationBar from "@/components/organism/header/navigationBar";
 import Footer from "@/components/organism/footer/footer";
 
 import ThemeProvider from "../utils/themeProvider";
-import ScrollProgressBar from "@/components/molecule/scrollPercentageBar";
 import { siteMetadata } from "@/metadata";
 
 const geistSans = localFont({

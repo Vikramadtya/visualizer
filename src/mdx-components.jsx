@@ -3,7 +3,7 @@
 // React _component you want, including inline styles,
 // components from other libraries, and more.
 
-export function useMDXComponents(components) {
+export function customMDXComponents(components) {
   return {
     h1: ({ id, children }) => (
       <h1

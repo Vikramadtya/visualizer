@@ -8,18 +8,16 @@ import { Separator } from "../../../components/molecule/separator";
 import { prettyCodeOptions } from "../../../utils/markdownConstants.mjs";
 import Comments from "../../../components/molecule/comment";
 import Doodle from "../../../components/molecule/doodle";
-import ScrollProgressBar from "../../../components/molecule/scrollPercentageBar";
 import {
   getBlogContentBySlug,
   getAllBlogs,
   getBlogMetaDataBySlug,
 } from "../../../services/contentService";
 
-import { useMDXComponents } from "../../../mdx-components";
+import { customMDXComponents } from "../../../mdx-components";
 import ShareBar from "../../../components/molecule/shareBar";
 import SortFactory from "../../../libs/sortMethods/factory";
 import { shuffle } from "../../../libs/utility";
-import SortBoard from "../../../components/organism/visualiser/atom/sortBoard";
 import Visualiser from "../../../components/organism/visualiser/visualiser";
 
 export async function generateStaticParams() {
@@ -72,7 +70,7 @@ export default async function Post({ params }) {
                 ],
               },
             }}
-            components={useMDXComponents()}
+            components={customMDXComponents()}
           />
         </div>
 

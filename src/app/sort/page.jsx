@@ -1,6 +1,5 @@
 import React from "react";
 import Content from "./content.mdx";
-import ComplexityTable from "../../components/molecule/complexityTable";
 
 export default function Home() {
   return (

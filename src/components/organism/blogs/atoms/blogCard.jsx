@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const BlogCard = ({ title, description, author, slug }) => {
+const BlogCard = ({ title, description, slug }) => {
   return (
     <>
       <Link

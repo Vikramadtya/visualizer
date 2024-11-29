@@ -1,4 +1,3 @@
-import { Sort } from "../utility";
 import BubbleSort from "./bubbleSort";
 
 const SortFactory = (sort) => {
