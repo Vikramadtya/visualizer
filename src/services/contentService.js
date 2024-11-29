@@ -1,6 +1,3 @@
-import fs from "fs";
-import path from "path";
-
 let sorts = {
   "bubble-sort": {
     title: "Bubble sort",
@@ -18,7 +15,15 @@ export async function getBlogMetaDataBySlug(slug) {
   return sorts[slug];
 }
 
-export function getBlogContentBySlug(slug) {
-  let filePath = path.join(__dirname, "../../../../../markdown", slug + ".mdx");
-  return fs.readFileSync(filePath, { encoding: "utf8", flag: "r" });
+export async function getBlogContentBySlug(slug) {
+  const response = await fetch(
+    `https://raw.githubusercontent.com/Vikramadtya/visualizer/refs/heads/main/markdown/${slug}.mdx`,
+    {
+      method: "GET",
+      headers: {
+        "Content-type": "application/json",
+      },
+    },
+  );
+  return await response.text();
 }

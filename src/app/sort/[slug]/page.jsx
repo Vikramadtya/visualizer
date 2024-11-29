@@ -45,7 +45,7 @@ export default async function Post({ params }) {
   const { slug } = await params;
 
   const blogData = await getBlogMetaDataBySlug(slug);
-  const content = getBlogContentBySlug(slug);
+  const content = await getBlogContentBySlug(slug);
 
   let maxNumber = 10;
 
