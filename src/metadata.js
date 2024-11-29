@@ -3,8 +3,8 @@ export const siteMetadata = {
   author: "Vikramaditya Singh",
   designation: "Software engineer II",
   company: "Cisco",
-  headerTitle: "NEURAL COOK",
-  description: "A posts created with Next.js and Tailwind.css",
+  headerTitle: "Sort Visualizer",
+  description: "Visualisation of various sorting methods",
   language: "en-us",
   theme: "system", // system, dark or light
   siteUrl: "",
@@ -27,6 +27,8 @@ export const siteMetadata = {
     day: "numeric",
   },
   portfolioLink: "https://www.vikramaditya-singh.in",
+  blogLink: "https://www.neuralcook.com/",
+  notesLink: "https://private-26.gitbook.io/notes",
   openToWork: true,
   giscus: {
     label: "comments",
