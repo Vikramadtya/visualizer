@@ -9,7 +9,7 @@ const Box = ({ color, width, height, value }) => {
           height: height + "px",
         }}
       >
-        <div className="mt-auto">{value}</div>
+        <div className="mt-auto text-sm">{value}</div>
       </div>
     </>
   );
