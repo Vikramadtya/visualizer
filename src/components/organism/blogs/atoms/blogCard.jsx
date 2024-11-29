@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { classNameResolver } from "@/utils/classNameResolver";
 
 const BlogCard = ({ title, description, slug, color }) => {
   return (
     <>
       <Link
         href={`/${slug}`}
-        className={`${color} block max-w-sm rounded-lg border border-gray-200 p-6 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700`}
+        className="block max-w-sm rounded-lg border border-gray-200 p-6 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+        style={{ background: color }}
       >
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {title}
