@@ -52,7 +52,7 @@ const Visualiser = ({ data, maxNumber }) => {
                 type="button"
                 className="rounded-lg px-2 text-xs font-semibold leading-6 text-slate-500 ring-2 ring-inset ring-slate-500 transition-all transition-all transition-all duration-500 duration-500 duration-500 dark:bg-slate-500 dark:text-slate-100 dark:ring-0"
               >
-                10
+                {maxNumber}
               </button>
               <button
                 type="button"
