@@ -1,7 +1,7 @@
 import remarkGfm from "remark-gfm";
 import createMDX from "@next/mdx";
 import rehypePrettyCode from "rehype-pretty-code";
-import { prettyCodeOptions } from "./src/utils/markdownConstants.js";
+import { prettyCodeOptions } from "./src/utils/markdownConstants.mjs";
 
 const nextConfig = {
   webpack: (config) => {

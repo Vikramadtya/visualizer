@@ -3,13 +3,14 @@ import path from "path";
 
 let sorts = {
   "bubble-sort": {
-    title: "bubble sort",
-    description: "bubble sort",
+    title: "Bubble sort",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     slug: "bubble-sort",
   },
 };
 
-export async function getAllBlogs() {
+export function getAllBlogs() {
   return Object.values(sorts);
 }
 

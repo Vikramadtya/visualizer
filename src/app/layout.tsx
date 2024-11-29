@@ -38,6 +38,21 @@ export default function RootLayout({
           integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+"
           crossOrigin="anonymous"
         />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon/favicon-96x96.png"
+          sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicon/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="Sort Visualizer" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

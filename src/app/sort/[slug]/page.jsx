@@ -5,7 +5,7 @@ import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 
 import { Separator } from "../../../components/molecule/separator";
-import { prettyCodeOptions } from "../../../utils/markdownConstants";
+import { prettyCodeOptions } from "../../../utils/markdownConstants.mjs";
 import Comments from "../../../components/molecule/comment";
 import Doodle from "../../../components/molecule/doodle";
 import ScrollProgressBar from "../../../components/molecule/scrollPercentageBar";
