@@ -4,21 +4,21 @@ import remarkGfm from "remark-gfm";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 
-import { Separator } from "../../../components/molecule/separator";
-import { prettyCodeOptions } from "../../../utils/markdownConstants.mjs";
-import Comments from "../../../components/molecule/comment";
-import Doodle from "../../../components/molecule/doodle";
+import { Separator } from "../../components/molecule/separator";
+import { prettyCodeOptions } from "../../utils/markdownConstants.mjs";
+import Comments from "../../components/molecule/comment";
+import Doodle from "../../components/molecule/doodle";
 import {
   getBlogContentBySlug,
   getAllBlogs,
   getBlogMetaDataBySlug,
-} from "../../../services/contentService";
+} from "../../services/contentService";
 
-import { customMDXComponents } from "../../../mdx-components";
-import ShareBar from "../../../components/molecule/shareBar";
-import SortFactory from "../../../libs/sortMethods/factory";
-import { shuffle } from "../../../libs/utility";
-import Visualiser from "../../../components/organism/visualiser/visualiser";
+import { customMDXComponents } from "../../mdx-components";
+import ShareBar from "../../components/molecule/shareBar";
+import SortFactory from "../../libs/sortMethods/factory";
+import { shuffle } from "../../libs/utility";
+import Visualiser from "../../components/organism/visualiser/visualiser";
 
 export async function generateStaticParams() {
   const posts = await getAllBlogs();
