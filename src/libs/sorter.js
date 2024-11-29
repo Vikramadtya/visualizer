@@ -20,7 +20,6 @@ export class Sorter {
   }
 
   sort(array) {
-    console.log("sorting : " + array);
     // clear state queue before sorting
     this.stateQueue = [];
     this.sorter(array);
