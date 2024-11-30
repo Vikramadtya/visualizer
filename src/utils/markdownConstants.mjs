@@ -1,4 +1,4 @@
-import { getHighlighter } from "shiki";
+import { getSingletonHighlighter } from "shiki";
 
 export const prettyCodeOptions = {
   // theme: 'github-dark',
@@ -14,7 +14,7 @@ export const prettyCodeOptions = {
     }
   },
   getHighlighter: (options) => {
-    return getHighlighter({
+    return getSingletonHighlighter({
       ...options,
       langs: [
         "svelte",
