@@ -39,9 +39,7 @@ const commonComplexity = {
   n: (
     <math>
       <mrow>
-        <msup>
-          <mi>n</mi>
-        </msup>
+        <mi>n</mi>
       </mrow>
     </math>
   ),
@@ -57,18 +55,14 @@ const commonComplexity = {
   1: (
     <math>
       <mrow>
-        <msup>
-          <mi>1</mi>
-        </msup>
+        <mi>1</mi>
       </mrow>
     </math>
   ),
   k: (
     <math>
       <mrow>
-        <msup>
-          <mi>k</mi>
-        </msup>
+        <mi>k</mi>
       </mrow>
     </math>
   ),
