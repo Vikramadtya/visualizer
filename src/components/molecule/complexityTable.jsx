@@ -75,6 +75,14 @@ let sortToComplexity = [
     worstTimeComplexity: commonComplexity["n^2"],
     averageTimeComplexity: commonComplexity["n^2"],
     spaceComplexity: commonComplexity["1"],
+    bestTimeComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
+    worstTimeComplexityColor:
+      "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+    averageTimeComplexityColor:
+      "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+    spaceComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
   },
   {
     name: "Insertion Sort",
@@ -82,6 +90,14 @@ let sortToComplexity = [
     worstTimeComplexity: commonComplexity["n^2"],
     averageTimeComplexity: commonComplexity["n^2"],
     spaceComplexity: commonComplexity["1"],
+    bestTimeComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
+    worstTimeComplexityColor:
+      "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+    averageTimeComplexityColor:
+      "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+    spaceComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
   },
   {
     name: "Selection Sort",
@@ -89,6 +105,14 @@ let sortToComplexity = [
     worstTimeComplexity: commonComplexity["n^2"],
     averageTimeComplexity: commonComplexity["n^2"],
     spaceComplexity: commonComplexity["1"],
+    bestTimeComplexityColor:
+      "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+    worstTimeComplexityColor:
+      "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+    averageTimeComplexityColor:
+      "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+    spaceComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
   },
   {
     name: "Heap Sort",
@@ -96,6 +120,14 @@ let sortToComplexity = [
     worstTimeComplexity: commonComplexity["nLog(n)"],
     averageTimeComplexity: commonComplexity["nLog(n)"],
     spaceComplexity: commonComplexity["1"],
+    bestTimeComplexityColor:
+      "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300",
+    worstTimeComplexityColor:
+      "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300",
+    averageTimeComplexityColor:
+      "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300",
+    spaceComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
   },
   {
     name: "Merge Sort",
@@ -103,6 +135,14 @@ let sortToComplexity = [
     worstTimeComplexity: commonComplexity["nLog(n)"],
     averageTimeComplexity: commonComplexity["nLog(n)"],
     spaceComplexity: commonComplexity["n"],
+    bestTimeComplexityColor:
+      "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300",
+    worstTimeComplexityColor:
+      "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300",
+    averageTimeComplexityColor:
+      "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300",
+    spaceComplexityColor:
+      "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300",
   },
   {
     name: "Quick Sort",
@@ -110,6 +150,14 @@ let sortToComplexity = [
     worstTimeComplexity: commonComplexity["n^2"],
     averageTimeComplexity: commonComplexity["nLog(n)"],
     spaceComplexity: commonComplexity["log(n)"],
+    bestTimeComplexityColor:
+      "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300",
+    worstTimeComplexityColor:
+      "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+    averageTimeComplexityColor:
+      "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300",
+    spaceComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
   },
   {
     name: "Radix Sort",
@@ -117,6 +165,14 @@ let sortToComplexity = [
     worstTimeComplexity: commonComplexity["nk"],
     averageTimeComplexity: commonComplexity["nk"],
     spaceComplexity: commonComplexity["n+k"],
+    bestTimeComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
+    worstTimeComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
+    averageTimeComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
+    spaceComplexityColor:
+      "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300",
   },
   {
     name: "Counting Sort",
@@ -124,6 +180,14 @@ let sortToComplexity = [
     worstTimeComplexity: commonComplexity["n+k"],
     averageTimeComplexity: commonComplexity["n+k"],
     spaceComplexity: commonComplexity["k"],
+    bestTimeComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
+    worstTimeComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
+    averageTimeComplexityColor:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
+    spaceComplexityColor:
+      "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300",
   },
 ];
 
@@ -162,16 +226,32 @@ const ComplexityTable = () => {
                     {item.name}
                   </th>
                   <td className="px-6 py-4">
-                    &Omicron; ({item.worstTimeComplexity})
+                    <span
+                      className={`${item.worstTimeComplexityColor} me-2 rounded px-2.5 py-0.5 text-xs font-medium`}
+                    >
+                      &Omicron; ({item.worstTimeComplexity})
+                    </span>
                   </td>
                   <td className="px-6 py-4">
-                    &Theta; ({item.averageTimeComplexity})
+                    <span
+                      className={`${item.averageTimeComplexityColor} me-2 rounded px-2.5 py-0.5 text-xs font-medium`}
+                    >
+                      &Theta; ({item.averageTimeComplexity})
+                    </span>
                   </td>
                   <td className="px-6 py-4">
-                    &Omega; ({item.bestTimeComplexity})
+                    <span
+                      className={`${item.bestTimeComplexityColor} me-2 rounded px-2.5 py-0.5 text-xs font-medium`}
+                    >
+                      &Omega; ({item.bestTimeComplexity})
+                    </span>
                   </td>
                   <td className="px-6 py-4">
-                    &Omicron; ({item.spaceComplexity})
+                    <span
+                      className={`${item.spaceComplexityColor} me-2 rounded px-2.5 py-0.5 text-xs font-medium`}
+                    >
+                      &Omicron; ({item.spaceComplexity})
+                    </span>
                   </td>
                 </tr>
               </tbody>
