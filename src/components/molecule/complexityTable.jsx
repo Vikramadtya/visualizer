@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 const commonComplexity = {
   "n^2": (
     <math>
@@ -71,6 +72,7 @@ const commonComplexity = {
 let sortToComplexity = [
   {
     name: "Bubble Sort",
+    slug: "bubble-sort",
     bestTimeComplexity: commonComplexity["n"],
     worstTimeComplexity: commonComplexity["n^2"],
     averageTimeComplexity: commonComplexity["n^2"],
@@ -86,6 +88,7 @@ let sortToComplexity = [
   },
   {
     name: "Insertion Sort",
+    slug: "insertion-sort",
     bestTimeComplexity: commonComplexity["n"],
     worstTimeComplexity: commonComplexity["n^2"],
     averageTimeComplexity: commonComplexity["n^2"],
@@ -101,6 +104,7 @@ let sortToComplexity = [
   },
   {
     name: "Selection Sort",
+    slug: "selection-sort",
     bestTimeComplexity: commonComplexity["n^2"],
     worstTimeComplexity: commonComplexity["n^2"],
     averageTimeComplexity: commonComplexity["n^2"],
@@ -116,6 +120,7 @@ let sortToComplexity = [
   },
   {
     name: "Heap Sort",
+    slug: "heap-sort",
     bestTimeComplexity: commonComplexity["nLog(n)"],
     worstTimeComplexity: commonComplexity["nLog(n)"],
     averageTimeComplexity: commonComplexity["nLog(n)"],
@@ -131,6 +136,7 @@ let sortToComplexity = [
   },
   {
     name: "Merge Sort",
+    slug: "merge-sort",
     bestTimeComplexity: commonComplexity["nLog(n)"],
     worstTimeComplexity: commonComplexity["nLog(n)"],
     averageTimeComplexity: commonComplexity["nLog(n)"],
@@ -146,6 +152,7 @@ let sortToComplexity = [
   },
   {
     name: "Quick Sort",
+    slug: "quick-sort",
     bestTimeComplexity: commonComplexity["nLog(n)"],
     worstTimeComplexity: commonComplexity["n^2"],
     averageTimeComplexity: commonComplexity["nLog(n)"],
@@ -161,6 +168,7 @@ let sortToComplexity = [
   },
   {
     name: "Radix Sort",
+    slug: "radix-sort",
     bestTimeComplexity: commonComplexity["nk"],
     worstTimeComplexity: commonComplexity["nk"],
     averageTimeComplexity: commonComplexity["nk"],
@@ -176,6 +184,7 @@ let sortToComplexity = [
   },
   {
     name: "Counting Sort",
+    slug: "counting-sort",
     bestTimeComplexity: commonComplexity["n+k"],
     worstTimeComplexity: commonComplexity["n+k"],
     averageTimeComplexity: commonComplexity["n+k"],
@@ -221,9 +230,9 @@ const ComplexityTable = () => {
                 <tr className="border-b border-gray-200 dark:border-gray-700">
                   <th
                     scope="row"
-                    className="whitespace-nowrap bg-gray-50 px-6 py-4 font-medium text-gray-900 dark:bg-gray-800 dark:text-white"
+                    className="whitespace-nowrap bg-gray-50 px-6 py-4 font-medium text-gray-900 hover:text-blue-500 dark:bg-gray-800 dark:text-white"
                   >
-                    {item.name}
+                    <Link href={`/${item.slug}`}>{item.name}</Link>
                   </th>
                   <td className="px-6 py-4">
                     <span
