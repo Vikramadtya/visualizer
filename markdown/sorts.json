@@ -3,48 +3,48 @@
     "title": "Bubble sort",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     "slug": "bubble-sort",
-    "color": "#e74c3c"
+    "color": "bg-red-500"
   },
   "insertion-sort": {
     "title": "Insertion sort",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     "slug": "insertion-sort",
-    "color": "#e74c3c"
+    "color": "bg-red-500"
   },
   "selection-sort": {
     "title": "Selection sort",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     "slug": "selection-sort",
-    "color": "#e74c3c"
+    "color": "bg-red-500"
   },
   "heap-sort": {
     "title": "Heap sort",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     "slug": "heap-sort",
-    "color": "#e67e22"
+    "color": "bg-orange-500"
   },
   "merge-sort": {
     "title": "Merge sort",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     "slug": "merge-sort",
-    "color": "#e67e22"
+    "color": "bg-orange-500"
   },
   "quick-sort": {
     "title": "Quick sort",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     "slug": "quick-sort",
-    "color": "#e67e22"
+    "color": "bg-orange-500"
   },
   "counting-sort": {
     "title": "Counting sort",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     "slug": "counting-sort",
-    "color": "#1abc9c"
+    "color": "bg-green-500"
   },
   "radix-sort": {
     "title": "Radix sort",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     "slug": "radix-sort",
-    "color": "#1abc9c"
+    "color": "bg-green-500"
   }
 }
