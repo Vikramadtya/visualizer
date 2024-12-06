@@ -3,7 +3,7 @@ import Link from "next/link";
 import { siteMetadata } from "@/metadata";
 import Icon from "@/components/molecule/icon";
 
-const NavigationBar = () => {
+const Header = () => {
   return (
     <>
       <nav className="mx-auto mt-10 w-full max-w-screen-lg rounded-md bg-white px-4 py-2 shadow-md lg:px-8 lg:py-3">
@@ -81,4 +81,4 @@ const NavigationBar = () => {
   );
 };
 
-export default NavigationBar;
+export default Header;

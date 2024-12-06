@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import "katex/dist/katex.min.css";
 
-import NavigationBar from "@/components/organism/header/navigationBar";
+import Header from "@/components/organism/header/header";
 import Footer from "@/components/organism/footer/footer";
 
 import ThemeProvider from "../utils/themeProvider";
@@ -60,7 +60,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <NavigationBar />
+            <Header />
 
             <main className="mx-auto mb-auto max-w-screen-lg py-10">
               {children}
