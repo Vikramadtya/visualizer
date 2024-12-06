@@ -19,7 +19,6 @@ const BlogCard = ({ title, description, slug, color }) => {
         <p className="font-normal text-gray-700 dark:text-white">
           {description}
         </p>
-        <span className="bg-green-500 bg-orange-500 bg-red-500" />
       </Link>
     </>
   );
