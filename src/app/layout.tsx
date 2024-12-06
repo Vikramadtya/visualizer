@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import "katex/dist/katex.min.css";
 
 import NavigationBar from "@/components/organism/header/navigationBar";
 import Footer from "@/components/organism/footer/footer";
@@ -33,12 +34,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
-          integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+"
-          crossOrigin="anonymous"
-        />
-        <link
           rel="icon"
           type="image/png"
           href="/favicon/favicon-96x96.png"
@@ -53,6 +48,7 @@ export default function RootLayout({
         />
         <meta name="apple-mobile-web-app-title" content="Sort Visualizer" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
+        <title>Sort Visualiser</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
