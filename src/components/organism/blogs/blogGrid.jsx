@@ -16,8 +16,8 @@ const BlogGrid = ({ blogs }) => {
             </div>
           );
         })}
-        <span className="bg-green-500 bg-orange-500 bg-red-500" />
       </div>
+      <span className="bg-green-500 bg-orange-500 bg-red-500" />
     </>
   );
 };
