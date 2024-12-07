@@ -8,15 +8,24 @@ class BubbleSort extends Sorter {
   }
 
   bubbleSort(array) {
-    for (let i = 0; i < array.length; ++i) {
+    for (let i = array.length - 1; i >= 0; --i) {
+      // to track if the array is already sorted
+      let isSorted = true;
       this.captureStateHolding(array);
-      for (let j = 0; j < array.length - 1; ++j) {
+
+      for (let j = 0; j <= i; ++j) {
         this.captureStateComparing(array, j, j + 1);
+
+        // swap if the first element is larger than the other
         if (this.comparator(array[j], array[j + 1])) {
           this.captureStateSwapping(array, j, j + 1);
           this.swap(array, j, j + 1);
+          isSorted = false;
         }
       }
+
+      // break id already sorted
+      if (isSorted) break;
     }
     this.captureStateSorted(array);
   }
