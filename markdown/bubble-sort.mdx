@@ -4,16 +4,20 @@ The sorting algorithm works on the principle of moving the largest element to th
 
 We do multiple pass over the array till its sorted, during each pass we compare the adjacent elements ( i.e i and i+1) and swap if the first is greater than the second. So at the end of the pass the largest element is at the top.
 
-```java {6-8}
-// we will need n passess
-for ( int i = n-1 ; i >= 0; i-- ) {
-    for ( int j = 0; j+1 <= i; j++ ) {
-        // swap if the current element
-        // is larger than the next
-        if ( arr[j] < arr[j+1] ) {
-            swap(arr,i,j);
+```java {7-9}
+public int[] sortArray(int[] nums) {
+    // we will need nums.length passess
+    for (int i = nums.length - 1 ; i >= 0; i-- ) {
+        for ( int j = 0; j+1 <= i; j++ ) {
+            // swap if the current element
+            // is larger than the next
+            if ( nums[j] > nums[j+1] ) {
+                swap(nums,j,j+1);
+            }
         }
     }
+
+   return nums;
 }
 ```
 
@@ -26,12 +30,12 @@ If the array becomes sorted before all passes, to avoid unnecessary work we can 
 boolean isSorted = true;
 
 // we will need n passess
-for ( int i = n-1 ; i >= 0; i-- ) {
+for ( int i = nums.length - 1 ; i >= 0; i-- ) {
     for ( int j = 0; j+1 <= i; j++ ) {
         // swap if the current element
         // is larger than the next
-        if ( arr[j] < arr[j+1] ) {
-            swap(arr,i,j);
+        if ( nums[j] < nums[j+1] ) {
+            swap(nums,j,j+1);
             isSorted = false;
         }
     }

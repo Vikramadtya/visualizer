@@ -16,6 +16,31 @@ Insertion sort is a stable and in-place sorting algorithm where the basic idea i
 
 <img src="/images/sort/insertion-sort/IMG_0037.JPG" alt="insertion-sort" />
 
+the code
+
+```java
+private void swap (int[] nums , int i , int j ) {
+    int temp = nums[i];
+    nums[i] = nums[j];
+    nums[j] = temp;
+}
+
+public int[] sortArray(int[] nums) {
+   for (int i = 1; i < nums.length; ++i) {
+        for(int j = i - 1; j >= 0; --j) {
+            if(nums[j] < nums[j+1]) break;
+
+            // swap if nums[j+1] < nums[j]
+
+            swap(nums, j , j +1 );
+
+        }
+   }
+
+   return nums;
+}
+```
+
 It is efficient for small lists and nearly sorted lists but inefficient for large lists.
 
 > The number of inversions is directly proportional to number of swaps. For example, no swapping happens for a sorted array and it takes $$\text{O}(n)$$ time only.
@@ -23,6 +48,7 @@ It is efficient for small lists and nearly sorted lists but inefficient for larg
 ## Key points
 
 - Insertion sort can be used when the list is small or nearly sorted (having few inversions)
-- It is used in Hybrid Sorting algorithms along with other efficient algorithms like Quick Sort and Merge Sort.
-- When the subarray size becomes small, we switch to insertion sort in these recursive algorithms.
+- It is used in Hybrid Sorting algorithms along with other efficient algorithms like Quick Sort and Merge Sort. i.e when the subarray size becomes small, we switch to insertion sort in these recursive algorithms.
 - Insertion sort can be used as a subroutine in Bucket Sort
+- It is online sort algorithm i.e can sort a list as it receives it
+- It is more efficient in practice than other quadratic algorithms such as selection sort or bubble sort
