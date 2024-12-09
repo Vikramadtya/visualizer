@@ -19,12 +19,6 @@ Insertion sort is a stable and in-place sorting algorithm where the basic idea i
 the code
 
 ```java
-private void swap (int[] nums , int i , int j ) {
-    int temp = nums[i];
-    nums[i] = nums[j];
-    nums[j] = temp;
-}
-
 public int[] sortArray(int[] nums) {
    for (int i = 1; i < nums.length; ++i) {
         for(int j = i - 1; j >= 0; --j) {
