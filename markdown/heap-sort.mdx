@@ -18,20 +18,20 @@ The sorting works as follows
 
 Visualize the array as a complete binary tree. For an array of size $$n$$, the root is at index $$0$$, the left child of an element at index $$i$$ is at $$2i + 1$$, and the right child is at $$2i + 2$$
 
-<img src="/images/sort/bubble-sort/IMG_0039.JPG" alt="heap-sort-first-pass" />
+<img src="/images/sort/heap-sort/IMG_0039.JPG" alt="heap-sort-first-pass" />
 
 Heapify is the process of converting a binary tree into a heap data structure.
 
-<img src="/images/sort/bubble-sort/IMG_0040.JPG" alt="heap-sort-first-pass" />
+<img src="/images/sort/heap-sort/IMG_0040.JPG" alt="heap-sort-first-pass" />
 
 ## Sorting
 
 In a max heap, swap the root element of the heap (which is the largest element in current heap) with the last element of the heap.
 
-<img src="/images/sort/bubble-sort/IMG_0041.JPG" alt="heap-sort-first-pass" />
+<img src="/images/sort/heap-sort/IMG_0041.JPG" alt="heap-sort-first-pass" />
 
 Remove/Ignore the last element of the heap (which is now in the correct position) and heapify the remaining elements of the heap.
 
-<img src="/images/sort/bubble-sort/IMG_0042.JPG" alt="heap-sort-first-pass" />
+<img src="/images/sort/heap-sort/IMG_0042.JPG" alt="heap-sort-first-pass" />
 
 repeat the following steps until the heap contains only one element & we get sorted array.
