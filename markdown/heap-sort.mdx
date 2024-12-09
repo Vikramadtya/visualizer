@@ -1,84 +1,37 @@
-| Complexity              | Value             |
-| ----------------------- | ----------------- |
-| Space Complexity        | $$\text{O}(1)$$   |
-| Average Time Complexity | $$\text{O}(n^2)$$ |
-| Best Time Complexity    | $$\text{O}(n)$$   |
-| Worst Time Complexity   | $$\text{O}(n^2)$$ |
+| Complexity              | Value                  |
+| ----------------------- | ---------------------- |
+| Space Complexity        | $$\text{O}(1)$$        |
+| Average Time Complexity | $$\text{O}(n\log{n})$$ |
+| Best Time Complexity    | $$\text{O}(n\log{n})$$ |
+| Worst Time Complexity   | $$\text{O}(n\log{n})$$ |
 
-Hello <span className="wavy">👋</span> I'm `Vikramaditya Singh`, a technology enthusiast with a deep love for programming. Currently, employeed as a Software Engineer II at Cisco. My expertise spans Algorithms, Data Structures, and Application Development, complemented by a strong foundation in Linux, Networking, and Databases.
+Heap sort is a comparison-based sorting algorithm that leverages the Binary Heap data structure. It can be viewed as an optimized version of selection sort. Instead of linearly finding the maximum (or minimum) element, it uses a Binary Heap to efficiently identify and move the max (or min) element in $$\text{O}(n\log{n})$$ time. This element is then swapped with the last (or first) in the list. The process is repeated for the remaining elements, resulting in an overall time complexity of $$\text{O}(n\log{n})$$.
 
-Recently, I've discovered a passion for tech blogging and writing. I'm enthusiastic about sharing insights and knowledge from the ever-evolving world of technology, making complex topics accessible and engaging for all.
+The sorting works as follows
 
-Currently I'm Learning `NextJS` to build modern web applications and also exploring `Data Science` and `Machine Learning`.
+- With input data, create a max heap
+- The root element is the max element
+- delete the root node of the max-heap and replace it with the last node and heapify
+- repeat till no elements in the heap
 
-## Tech Stack I'm familiar with
+## Heap
 
-```java
-// Optimized java implementation of Bubble sort
-import java.io.*;
+Visualize the array as a complete binary tree. For an array of size $$n$$, the root is at index $$0$$, the left child of an element at index $$i$$ is at $$2i + 1$$, and the right child is at $$2i + 2$$
 
-class GFG {
+<img src="/images/sort/bubble-sort/IMG_0039.JPG" alt="heap-sort-first-pass" />
 
-    // An optimized version of Bubble Sort
-    static void bubbleSort(int arr[], int n){
-        int i, j, temp;
-        boolean swapped;
-        for (i = 0; i < n - 1; i++) {
-            swapped = false;
-            for (j = 0; j < n - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
+Heapify is the process of converting a binary tree into a heap data structure.
 
-                    // Swap arr[j] and arr[j+1]
-                    temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    swapped = true;
-                }
-            }
+<img src="/images/sort/bubble-sort/IMG_0040.JPG" alt="heap-sort-first-pass" />
 
-            // If no two elements were
-            // swapped by inner loop, then break
-            if (swapped == false)
-                break;
-        }
-    }
+## Sorting
 
-    // Function to print an array
-    static void printArray(int arr[], int size){
-        int i;
-        for (i = 0; i < size; i++)
-            System.out.print(arr[i] + " ");
-        System.out.println();
-    }
+In a max heap, swap the root element of the heap (which is the largest element in current heap) with the last element of the heap.
 
-    // Driver program
-    public static void main(String args[]){
-        int arr[] = { 64, 34, 25, 12, 22, 11, 90 };
-        int n = arr.length;
-        bubbleSort(arr, n);
-        System.out.println("Sorted array: ");
-        printArray(arr, n);
-    }
-}
-```
+<img src="/images/sort/bubble-sort/IMG_0041.JPG" alt="heap-sort-first-pass" />
 
-Hello <span className="wavy">👋</span> I'm `Vikramaditya Singh`, a technology enthusiast with a deep love for programming. Currently, employeed as a Software Engineer II at Cisco. My expertise spans Algorithms, Data Structures, and Application Development, complemented by a strong foundation in Linux, Networking, and Databases.
+Remove/Ignore the last element of the heap (which is now in the correct position) and heapify the remaining elements of the heap.
 
-Recently, I've discovered a passion for tech blogging and writing. I'm enthusiastic about sharing insights and knowledge from the ever-evolving world of technology, making complex topics accessible and engaging for all.
+<img src="/images/sort/bubble-sort/IMG_0042.JPG" alt="heap-sort-first-pass" />
 
-Currently I'm Learning `NextJS` to build modern web applications and also exploring `Data Science` and `Machine Learning`.
-
-```js {1-3}
-import { useFloating } from "@floating-ui/react";
-
-function MyComponent() {
-  const { refs, floatingStyles } = useFloating();
-
-  return (
-    <>
-      <div ref={refs.setReference} />
-      <div ref={refs.setFloating} style={floatingStyles} />
-    </>
-  );
-}
-```
+repeat the following steps until the heap contains only one element & we get sorted array.
