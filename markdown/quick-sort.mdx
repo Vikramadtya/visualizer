@@ -1,6 +1,36 @@
 | Complexity              | Value                  |
 | ----------------------- | ---------------------- |
-| Space Complexity        | $$\text{\log{n}}$$     |
+| Space Complexity        | $$\text{O}(\log{n})$$  |
 | Average Time Complexity | $$\text{O}(n\log{n})$$ |
 | Best Time Complexity    | $$\text{O}(n\log{n})$$ |
 | Worst Time Complexity   | $$\text{O}(n^2)$$      |
+
+A divide and conquer algorithm but unlike merge sort it does not use any extra array for sorting(though it uses an auxiliary stack space).
+
+The idea is
+
+- Pick a pivot and place it in its correct place in the sorted array.
+- Shift smaller elements(i.e. Smaller than the pivot) on the left of the pivot and larger ones to the right.
+- Repeat the above step on left and right array of the pivot.
+
+> A pivot is basically a chosen element of the given array by our choice.
+
+After choosing the pivot(i.e. the element), place it in its correct position(i.e. The place it should be after the array gets sorted) in the array.
+
+The intention of this process is to place the pivot, after each recursion call, at its final position, where the pivot should be in the final sorted array.
+
+## Partition Algorithm
+
+Key process in quickSort is to partition array around pivot.
+
+- Naive Partition: Here we create copy of the array. First put all smaller elements and then all greater. Finally we copy the temporary array back to original array. This requires O(n) extra space.
+- Lomuto Partition: We have used this partition in this article. This is a simple algorithm, we keep track of index of smaller elements and keep swapping. We have used it here in this article because of its simplicity.
+- Hoare’s Partition: This is the fastest of all. Here we traverse array from both sides and keep swapping greater element on left with smaller on right while the array is not partitioned
+
+## Key points
+
+- It has a worst-case time complexity of $$\text{O}(n^2)$$ when the pivot is chosen poorly.
+- Not a good choice for small data sets.
+- Not a stable sort algorithm
+- Efficient for sorting large datasets with $$\text{O}(\log{n})$$ average-case time complexity.
+- Partitioning step can be parallelized for improved performance in multi-core or distributed systems.
