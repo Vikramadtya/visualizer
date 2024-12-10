@@ -7,7 +7,7 @@
   },
   "insertion-sort": {
     "title": "Insertion sort",
-    "description": "Insertion Sort is a beginner-friendly technique that mimics how we sort playing cards in our hands. It’s great for small or nearly sorted datasets",
+    "description": "Insertion Sort is a beginner-friendly technique that mimics how we sort playing cards in our hands",
     "slug": "insertion-sort",
     "color": "bg-red-500"
   },
