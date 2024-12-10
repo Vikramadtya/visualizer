@@ -3,7 +3,7 @@ import BlogCard from "./atoms/blogCard";
 const BlogGrid = ({ blogs }) => {
   return (
     <>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="columns-1 gap-4 space-y-4 md:columns-2 lg:columns-4">
         {blogs.map((blog) => {
           return (
             <div key={blog.slug}>

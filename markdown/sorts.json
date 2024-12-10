@@ -1,49 +1,49 @@
 {
   "bubble-sort": {
     "title": "Bubble sort",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+    "description": " Beginner-friendly algorithm repeatedly swaps adjacent elements to 'bubble' the largest to the top.",
     "slug": "bubble-sort",
     "color": "bg-red-500"
   },
   "insertion-sort": {
     "title": "Insertion sort",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+    "description": "Insertion Sort is a beginner-friendly technique that mimics how we sort playing cards in our hands. It’s great for small or nearly sorted datasets learn more.. ",
     "slug": "insertion-sort",
     "color": "bg-red-500"
   },
   "selection-sort": {
     "title": "Selection sort",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+    "description": "A straightforward sorting algorithm that repeatedly selects the smallest (or largest) element and swaps it into its correct position.",
     "slug": "selection-sort",
     "color": "bg-red-500"
   },
   "heap-sort": {
     "title": "Heap sort",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+    "description": "leverages the Binary Heap to sort data with lightning speed and precision.",
     "slug": "heap-sort",
     "color": "bg-orange-500"
   },
   "merge-sort": {
     "title": "Merge sort",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+    "description": "Divide and conquer your way to sorted data with Merge Sort, it’s a favorite for handling large datasets and parallel processing",
     "slug": "merge-sort",
     "color": "bg-orange-500"
   },
   "quick-sort": {
     "title": "Quick sort",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+    "description": "A divide-and-conquer powerhouse that sorts data with remarkable speed and precision. It's quick as its in the name",
     "slug": "quick-sort",
     "color": "bg-orange-500"
   },
   "counting-sort": {
     "title": "Counting sort",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+    "description": "A non-comparison-based algorithm that delivers lightning-fast performance by counting occurrences.",
     "slug": "counting-sort",
     "color": "bg-green-500"
   },
   "radix-sort": {
     "title": "Radix sort",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+    "description": "A non-comparison-based approach to sorting by processing numbers digit by digit its fast, efficient, and reliable for integers",
     "slug": "radix-sort",
     "color": "bg-green-500"
   }
