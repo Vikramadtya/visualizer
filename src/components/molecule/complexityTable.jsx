@@ -211,16 +211,16 @@ const ComplexityTable = () => {
                 Algorithm
               </th>
               <th scope="col" className="px-6 py-3">
-                Worst Time Complexity
+                <Link href="/complexity">Worst Time Complexity</Link>
               </th>
               <th scope="col" className="px-6 py-3">
-                Average Time Complexity
+                <Link href="/complexity">Average Time Complexity</Link>
               </th>
               <th scope="col" className="px-6 py-3">
-                Best Time Complexity
+                <Link href="/complexity">Best Time Complexity</Link>
               </th>
               <th scope="col" className="px-6 py-3">
-                Space Complexity
+                <Link href="/complexity">Space Complexity</Link>
               </th>
             </tr>
           </thead>

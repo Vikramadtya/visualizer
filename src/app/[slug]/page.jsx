@@ -54,6 +54,10 @@ export default async function Post({ params }) {
     <>
       <article className="prose prose-sm mx-auto  pb-20 pt-20 md:prose-base lg:prose-lg ">
         <div className="dark:text-gray-50">
+          <h1 className="mt-10 scroll-m-20 text-4xl font-bold tracking-tight first:mt-0 dark:text-gray-50 md:text-4xl lg:text-7xl">
+            {blogData.title}
+          </h1>
+
           <Visualiser
             data={JSON.stringify(sorter.getSortHistory())}
             maxNumber={maxNumber}
