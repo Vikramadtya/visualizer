@@ -7,7 +7,7 @@ const BlogCard = ({ title, description, slug, color }) => {
     <>
       <Link
         href={`/${slug}`}
-        className={`${color} block max-w-sm rounded-lg border border-gray-200 p-6 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700`}
+        className={`${color} block max-w-sm break-inside-avoid-column rounded-lg border border-gray-200 p-6 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700`}
       >
         <div className="mb-5 flex items-center gap-3">
           <Image src={Pigeon} alt="my gif" height={50} width={50} />

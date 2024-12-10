@@ -1,25 +1,25 @@
 {
   "bubble-sort": {
     "title": "Bubble sort",
-    "description": " Beginner-friendly algorithm repeatedly swaps adjacent elements to 'bubble' the largest to the top.",
+    "description": "Beginner-friendly algorithm repeatedly swaps adjacent elements to 'bubble' the largest to the top",
     "slug": "bubble-sort",
     "color": "bg-red-500"
   },
   "insertion-sort": {
     "title": "Insertion sort",
-    "description": "Insertion Sort is a beginner-friendly technique that mimics how we sort playing cards in our hands. It’s great for small or nearly sorted datasets learn more.. ",
+    "description": "Insertion Sort is a beginner-friendly technique that mimics how we sort playing cards in our hands. It’s great for small or nearly sorted datasets",
     "slug": "insertion-sort",
     "color": "bg-red-500"
   },
   "selection-sort": {
     "title": "Selection sort",
-    "description": "A straightforward sorting algorithm that repeatedly selects the smallest (or largest) element and swaps it into its correct position.",
+    "description": "A straightforward sorting algorithm that repeatedly selects the smallest (or largest) element and swaps it into its correct position",
     "slug": "selection-sort",
     "color": "bg-red-500"
   },
   "heap-sort": {
     "title": "Heap sort",
-    "description": "leverages the Binary Heap to sort data with lightning speed and precision.",
+    "description": "leverages the Binary Heap to sort data with lightning speed and precision",
     "slug": "heap-sort",
     "color": "bg-orange-500"
   },
@@ -37,7 +37,7 @@
   },
   "counting-sort": {
     "title": "Counting sort",
-    "description": "A non-comparison-based algorithm that delivers lightning-fast performance by counting occurrences.",
+    "description": "A non-comparison-based algorithm that delivers lightning-fast performance by counting occurrences",
     "slug": "counting-sort",
     "color": "bg-green-500"
   },

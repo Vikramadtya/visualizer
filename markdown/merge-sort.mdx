@@ -4,3 +4,21 @@
 | Average Time Complexity | $$\text{O}(n\log{n})$$ |
 | Best Time Complexity    | $$\text{O}(n\log{n})$$ |
 | Worst Time Complexity   | $$\text{O}(n\log{n})$$ |
+
+A **stable** sorting algorithm that follows the divide-and-conquer approach. It works by recursively dividing the input array into smaller subarrays and sorting those subarrays then merging them back together to obtain the sorted array.
+
+The step involved are
+
+- Divide : Divide the list or array recursively into two halves until it can no more be divided.
+- Conquer : Each subarray is sorted individually using the merge sort algorithm.
+- Merge : The sorted subarrays are merged back together in sorted order.
+
+Merge sort is not an in-place sorting algorithm, which means it requires additional memory to store the sorted data. This can be a disadvantage in applications where memory usage is a concern.
+
+## Key Points
+
+- can independently merge subarrays that makes it suitable for parallel processing.
+- Supports External sorting (when the dataset is too large to fit in memory)
+- Can be modified to count the inversion
+- a preferred algorithm for sorting Linked lists.
+- quickSort is more cache friendly because it works in-place.
