@@ -1,9 +1,9 @@
-# Introduction
-
 When comparing various sorting algorithms, there are several things to consider.
 
 - The first is usually runtime. When dealing with increasingly large sets of data, inefficient sorting algorithms can become too slow for practical use within an application.
 - Faster algorithms that require recursive calls typically involve creating copies of the data to be sorted. In some environments where memory space may be at a premium (such as an embedded system) certain algorithms may be impractical. In other cases, it may be possible to modify the algorithm to work “in place”, without creating copies of the data.
 - A third consideration is stability
 
-> 💡 Stability, simply defined, is what happens to elements that are comparatively the same. In a stable sort, those elements whose comparison key is the same will remain in the same relative order after sorting as they were before sorting. In an unstable sort, no guarantee is made as to the relative output order of those elements whose sort key is the same.
+## Stability
+
+Stability, simply defined, is what happens to elements that are comparatively the same. In a stable sort, those elements whose comparison key is the same will remain in the same relative order after sorting as they were before sorting. In an unstable sort, no guarantee is made as to the relative output order of those elements whose sort key is the same.
