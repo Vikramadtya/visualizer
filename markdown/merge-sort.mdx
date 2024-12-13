@@ -12,14 +12,15 @@ A **stable** sorting algorithm that follows the divide-and-conquer approach. It 
 The step involved are
 
 ###### Divide
+
 A merge sort works recursively. First it divides a data set in half, and sorts each half separately.
 
 ###### Merge
+
 The sorted sub-arrays are merged back together in sorted order.
+
 1. The first elements from each of the two lists are compared.
 2. The lesser element is then removed from its list and added to the final result list.
-
-
 
 Each recursive call has `O(n)` runtime, and a total of `O(log n)` recursions are required, thus **the runtime of this algorithm is** `O(n * log n)`. A merge sort can also be modified for performance on lists that are nearly sorted to begin with. After sorting each half of the data, if the highest element in one list is less than the lowest element in the other half, then the merge step is unnecessary.
 

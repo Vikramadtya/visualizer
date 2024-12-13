@@ -10,6 +10,7 @@ import Pause from "../../../public/icons/control/pause.svg";
 import Previous from "../../../public/icons/control/previous.svg";
 import Next from "../../../public/icons/control/next.svg";
 import Bulb from "../../../public/icons/alert/bulb.svg";
+import Github from "../../../public/icons/social/github.svg";
 
 import { classNameResolver } from "@/utils/classNameResolver";
 
@@ -26,6 +27,7 @@ const components = {
   play: Play,
   next: Next,
   bulb: Bulb,
+  github: Github,
 };
 
 const Icon = ({ kind, className }) => {

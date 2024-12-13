@@ -49,7 +49,14 @@ const Header = () => {
                   About
                 </Link>
               </li>
-
+              <a
+                href="https://github.com/Vikramadtya/visualizer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-x-2 p-1 text-sm text-slate-600"
+              >
+                <Icon kind="github" className={"h-6 w-6 text-slate-500"} />
+              </a>
               <li>
                 <ThemeToggle />
               </li>
